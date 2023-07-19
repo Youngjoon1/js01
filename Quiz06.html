@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		let num1, result;
+		function input() {
+			num1 = prompt();
+			
+		}
+		
+		function exec() {
+			result = (num1 % 3==0? "3의 배수입니다":"3의 배수가 아닙니다");
+			
+		}
+		
+		function print() {
+			document.write("<br><br><br>");
+			document.write("정답 : " + result);
+		}
+	</script>
+
+</head>
+<body>
+	<input type="button" value="입력" onclick="input()" />
+	<input type="button" value="연산" onclick="exec()" />
+	<input type="button" value="출력" onclick="print()" />
+
+</body>
+</html>

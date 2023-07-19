@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		let num1, num2, num3, result;
+		function input() {
+			num1 = prompt();
+			num2 = prompt();
+		}
+		
+		function exec() {
+			result = (num1 % 2==0? "짝":"홀");
+			
+		}
+		
+		function print() {
+			document.write("<br><br><br>");
+			document.write("정답 : " + result);
+		}
+	</script>
+
+</head>
+<body>
+	<input type="button" value="입력" onclick="input()" />
+	<input type="button" value="연산" onclick="exec()" />
+	<input type="button" value="출력" onclick="print()" />
+
+</body>
+</html>

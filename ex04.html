@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+		let str = `안녕하세요
+					반갑습니다
+					다시만나요`;
+					
+		const name = prompt("이름 입력");			
+		const age = prompt(name + "나이 입력");			
+		const addr = prompt(name + "주소 입력");
+		
+		document.write('<table border="1">');
+		document.write('<tr><th>이름</th></tr>');
+		document.write('</table>');
+		
+		document.write(`<table border="1">
+			<tr><th>이름</th></tr>
+			</table>`);
+			
+		let msg = `<table border="1">
+			<tr><th>이름</th></tr>
+			</table>`
+		document.write(msg);	
+		
+		msg = `<table border="1">
+					<tr>
+						<th>이름</th>
+						<th>나이</th>
+						<th>주소</th>
+					</tr>
+					<tr>
+						<td>${name}</td>
+						<td>${age}</td>
+						<td>${addr}</td>
+					</tr>
+				</table>`;
+				document.write(msg);			
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<th>나이</th>
+			<th>주소</th>
+		</tr>
+		<tr>
+			<td>${name}</td>
+			<td>${age}</td>
+			<td>${addr}</td>
+		</tr>
+	</table>
+	
+
+</body>
+</html>
